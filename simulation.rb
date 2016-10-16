@@ -31,7 +31,7 @@ def simulate(switch)
     chosen_door = doors.reject{ |d| d == chosen_door || d == revealed_door }.first
   end
 
-  # Determine outcome, return true/false or win/lose
+  # Determine outcome, return true/false for win/lose
   chosen_door == prize_door
 end
 
